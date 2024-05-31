@@ -15,6 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 ## Blog
-[![我的知识空间](https://xiebaiyuan.top)
+[我的知识空间](https://xiebaiyuan.top)
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=PaddlePaddle/Paddle-Lite&type=Date)](https://star-history.com/#PaddlePaddle/Paddle-Lite&Date)
