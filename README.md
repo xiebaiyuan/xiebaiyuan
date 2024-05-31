@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+## Blog
+[![我的知识空间](https://github.com/xiebaiyuan)
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=PaddlePaddle/Paddle-Lite&type=Date)](https://star-history.com/#PaddlePaddle/Paddle-Lite&Date)
