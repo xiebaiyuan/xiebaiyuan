@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 ## Blog
 ### [木白的芝士小屋](https://xiebaiyuan.top)
 ## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=PaddlePaddle/Paddle-Lite&type=Date)](https://star-history.com/#PaddlePaddle/Paddle-Lite&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=PaddlePaddle/Paddle-Lite&type=Date)](https://github.com/PaddlePaddle/Paddle-Lite.git)
 
 ### [回到顶部](https://github.com/xiebaiyuan/xiebaiyuan#readme)
 
