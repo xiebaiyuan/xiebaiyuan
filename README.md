@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a3a5c,100:0ea5e9&height=200&section=header&text=Baiyuan%20Xie%20%2F%20%E6%9C%A8%E7%99%BD&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=AI%20Inference%20Engineer%20%7C%20Mobile%20AI%20%7C%20App%20Builder&descAlignY=58&descSize=18" width="100%"/>
 
-[![Blog](https://img.shields.io/badge/Blog-%E6%9C%A8%E7%99%BD%E7%9A%84%E8%8A%9D%E5%A3%AB%E5%B0%8F%E5%B1%8B-0ea5e9?style=flat-square&logo=ghost&logoColor=white)](https://xiebaiyuan.top)
+[![Blog](https://img.shields.io/badge/Blog-%E6%9C%A8%E7%99%BD%E7%9A%84%E8%8A%9D%E5%A3%AB%E5%B0%8F%E5%B1%8B-0ea5e9?style=flat-square&logo=ghost&logoColor=white)](https://xiebylovechina.top)
 [![Email](https://img.shields.io/badge/Email-xiebaiyuan%40foxmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:xiebaiyuan@foxmail.com)
 [![GitHub followers](https://img.shields.io/github/followers/xiebaiyuan?style=flat-square&logo=github&label=Followers)](https://github.com/xiebaiyuan)
 
@@ -128,7 +128,7 @@ I build real apps — shipped, installable, daily-driveable — focusing on **Ha
 - **HarmonyOS ecosystem** — apps, developer tooling, open source libraries
 - **Open benchmarking** — fair, reproducible performance comparisons
 
-📬 **[xiebaiyuan@foxmail.com](mailto:xiebaiyuan@foxmail.com)** · 📝 **[木白的芝士小屋](https://xiebaiyuan.top)**
+📬 **[xiebaiyuan@foxmail.com](mailto:xiebaiyuan@foxmail.com)** · 📝 **[木白的芝士小屋](https://xiebylovechina.top)**
 
 ---
 
