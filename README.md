@@ -115,8 +115,9 @@ Network infra, DNS tooling & utility services I run at home.
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=xiebaiyuan&show_icons=true&theme=tokyonight&hide_title=true&count_private=true&include_all_commits=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xiebaiyuan&layout=compact&theme=tokyonight&hide_title=true&langs_count=8)
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=xiebaiyuan&theme=tokyonight)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xiebaiyuan&theme=tokyonight)
+![Top Langs](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=xiebaiyuan&theme=tokyonight)
 
 </div>
 
@@ -126,7 +127,7 @@ Network infra, DNS tooling & utility services I run at home.
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=PaddlePaddle/Paddle-Lite&type=Date)](https://github.com/PaddlePaddle/Paddle-Lite)
+[![Star History Chart](https://star-history.com/svg/repos/PaddlePaddle/Paddle-Lite?type=Date)](https://star-history.com/#PaddlePaddle/Paddle-Lite&Date)
 
 </div>
 
