@@ -123,16 +123,6 @@ Network infra, DNS tooling & utility services I run at home.
 
 ---
 
-## ⭐ Paddle-Lite Star History
-
-<div align="center">
-
-[![Star History Chart](https://star-history.com/svg/repos/PaddlePaddle/Paddle-Lite?type=Date)](https://star-history.com/#PaddlePaddle/Paddle-Lite&Date)
-
-</div>
-
----
-
 ## 🧭 Engineering Principles
 
 > *"Make it work on the hardest hardware first — everything else is easy after that."*
