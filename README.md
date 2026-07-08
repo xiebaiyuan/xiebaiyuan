@@ -42,6 +42,15 @@ Edge AI  ×  Mobile Apps  ×  Open Source  ×  Performance Obsession
 | [PaddleSelfTools](https://github.com/xiebaiyuan/PaddleSelfTools) | Author | Utility toolchain for Paddle-Lite development & profiling |
 | [opencl_cook](https://github.com/xiebaiyuan/opencl_cook) | Author | OpenCL kernel experiments & GPU compute recipes |
 
+### AI Agent & Automation
+
+Agent workflows & testing automation on mobile devices.
+
+| Project | Description |
+|---------|-------------|
+| [mobile-ui-automation](https://github.com/xiebaiyuan/mobile-ui-automation) | Dump mobile UI → auto-generate Appium / uiautomator2 / XCUITest / hypium test code |
+| [xiebaiyuan-skills](https://github.com/xiebaiyuan/xiebaiyuan-skills) | Personal AI Agent Skills — distilled personas & optimized workflows |
+
 ### Tech Stack — AI Side
 
 <p>
@@ -86,6 +95,19 @@ I build real apps — shipped, installable, daily-driveable — focusing on **Ha
   <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
   <img src="https://img.shields.io/badge/JNI%2FNDK-00B4AB?style=flat-square&logo=android&logoColor=white"/>
 </p>
+
+---
+
+## 🏠 Self-Hosted
+
+Network infra, DNS tooling & utility services I run at home.
+
+| Project | Description |
+|---------|-------------|
+| [adguard-home-boost](https://github.com/xiebaiyuan/adguard-home-boost) | AdGuardHome DNS query latency analyzer — P20~P99 per-domain stats |
+| [mosdns-dashboard](https://github.com/xiebaiyuan/mosdns-dashboard) | Multi-instance mosdns monitoring dashboard |
+| [adrule](https://github.com/xiebaiyuan/adrule) | Ad rules collection & management |
+| [work-timer](https://github.com/xiebaiyuan/work-timer) | Simple work time tracker |
 
 ---
 
@@ -136,4 +158,4 @@ I build real apps — shipped, installable, daily-driveable — focusing on **Ha
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:1a3a5c&height=80&section=footer" width="100%"/>
 </p>
 
-<p align="center"><sub>Updated: 2026-06-29</sub></p>
+<p align="center"><sub>Updated: 2026-07-08</sub></p>
