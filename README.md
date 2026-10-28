@@ -1,5 +1,7 @@
 <div align="center">
 
+<p><b>English</b> · <a href="./README.zh-CN.md">简体中文</a></p>
+
 <img src="assets/hero.svg" width="100%" alt="Xie Zhibai / 木白 — on-device AI inference, agent runtime, DSH plugin author"/>
 
 <p>
@@ -89,6 +91,25 @@ flowchart LR
 </p>
 <img src="assets/divider.svg" width="100%" alt="circuit divider"/>
 
+## Open Source Contributions
+
+Patches I sent upstream to projects with more than 100 stars, most of them merged.
+
+| Project | Stars | My contribution |
+|---|---|---|
+| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 40,977 | 3 merged PRs — retry the health probe when a gateway redirects to its login (#5984), extra HTTP headers for the Hermes plugin (#5884), carry `OPENVIKING_EXTRA_HEADERS` on the runtime path (#5988) |
+| [zxing/zxing](https://github.com/zxing/zxing) | 34,185 | #1839 fix `SYMBOLOGY_IDENTIFIER` loss in `QRCodeMultiReader` |
+| [linkwarden/linkwarden](https://github.com/linkwarden/linkwarden) | 20,246 | #1667 add `link-my-harmony` to Community Projects |
+| [PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) | 7,288 | 89 merged PRs — HarmonyOS NEXT support (#10654), OpenCL init fixes (#10557), NPE fixes when loading quantized models, op coverage (pixel_unshuffle, fill_constant, search-GAN) |
+| [Jeric-X/SyncClipboard](https://github.com/Jeric-X/SyncClipboard) | 5,171 | #325 add the HarmonyOS NEXT client ClipLink |
+| [ryanstephen/lil-agents](https://github.com/ryanstephen/lil-agents) | 1,451 | #29 fix dock agents when the dock is on the side |
+| [githubhaohao/OpenGLCamera2](https://github.com/githubhaohao/OpenGLCamera2) | 1,089 | #4 fix `FreeNativeImage ppPlane[2] = nullptr` |
+| [open-city-ai/haidian](https://github.com/open-city-ai/haidian) | 416 | #161 AI-native city OS proposal for the Jing-Zhang AI Innovation Belt |
+
+<sub>Forks I keep in sync: [RunCatNeo](https://github.com/xiebaiyuan/RunCatNeo) — a fork of [runcat-dev/RunCatNeo](https://github.com/runcat-dev/RunCatNeo) (934 stars), tracked at 0 commits ahead and 0 behind upstream. My fork has no commits of its own.</sub>
+
+<img src="assets/divider.svg" width="100%" alt="circuit divider"/>
+
 ## AI Agents & DeepSeek Harness
 
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) is a plugin-first agent host: everything is a plugin. I write plugins for it, and I run a fairly deep stack of it every day.
@@ -112,23 +133,6 @@ flowchart TB
 # install (needs the official Agent Teams runtime enabled)
 dsh plugin add dsh-lead-mode
 ```
-
-### DSH plugins I run daily
-
-These ten are what my desktop profile actually loads.
-
-| Plugin | Version | What it gives me |
-|---|---|---|
-| [dsh-context](https://github.com/bowenliang123/dsh-context) | 0.77.0 | Context insight and management, so I can see what is really in the window |
-| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 0.14.0 | Interactive UI components rendered inline in a reply (npm package `@changfenhuang/dsh-genui`) |
-| [OpenViking memory](https://github.com/volcengine/OpenViking) | 0.5.29 | Persistent agent memory, knowledge RAG and skill storage (`@openviking/dsh-memory-plugin`) |
-| [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | git pin | Turns an answer into a one-page visual HTML explainer |
-| [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 0.26.2 | Imports external chat transcripts as continuable sessions |
-| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 0.3.8 | A transparent animated desktop pet |
-| [dshmarket](https://github.com/dsh-market/dsh-market) | 1.70.2 | Plugin market and updater for the desktop app |
-| [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 2.12.0 | Pocket utilities and shortcuts inside the host |
-| [dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) | 0.7.1 | Own font, size, line height and weight for the conversation, with saveable presets |
-| [subagent-claude-code](https://github.com/deepseek-ai/deepseek-harness) | 0.2.1-rc.3 | Runs a delegated task in a separate Claude Code agent (`@deepseek-ai/dsh-subagent-claude-code`) |
 
 ### Agent skills I distilled
 
@@ -167,6 +171,25 @@ npx skills add xiebaiyuan/xiebaiyuan-skills --all
 <img src="https://streak-stats.demolab.com?user=xiebaiyuan&amp;theme=tokyonight&amp;hide_border=true" alt="Contribution streak card"/>
 
 </div>
+
+<img src="assets/divider.svg" width="100%" alt="circuit divider"/>
+
+## Daily DSH stack
+
+These ten are the third-party plugins my desktop profile loads right now. They are not mine — I use them every day.
+
+| Plugin | Version | What it gives me |
+|---|---|---|
+| [dsh-context](https://github.com/bowenliang123/dsh-context) | 0.77.0 | Context insight and management, so I can see what is really in the window |
+| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 0.14.0 | Interactive UI components rendered inline in a reply (npm package `@changfenhuang/dsh-genui`) |
+| [OpenViking memory](https://github.com/volcengine/OpenViking) | 0.5.29 | Persistent agent memory, knowledge RAG and skill storage (`@openviking/dsh-memory-plugin`) |
+| [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | git pin | Turns an answer into a one-page visual HTML explainer |
+| [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 0.26.2 | Imports external chat transcripts as continuable sessions |
+| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 0.3.8 | A transparent animated desktop pet |
+| [dshmarket](https://github.com/dsh-market/dsh-market) | 1.70.2 | Plugin market and updater for the desktop app |
+| [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 2.12.0 | Pocket utilities and shortcuts inside the host |
+| [dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) | 0.7.1 | Own font, size, line height and weight for the conversation, with saveable presets |
+| [subagent-claude-code](https://github.com/deepseek-ai/deepseek-harness) | 0.2.1-rc.3 | Runs a delegated task in a separate Claude Code agent (`@deepseek-ai/dsh-subagent-claude-code`) |
 
 <img src="assets/divider.svg" width="100%" alt="circuit divider"/>
 
