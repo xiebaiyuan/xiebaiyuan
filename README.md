@@ -8,6 +8,7 @@
   <a href="https://xiebaiyuan.com"><img src="https://img.shields.io/badge/Blog-%E6%9C%A8%E7%99%BD%E7%9A%84%E8%8A%9D%E5%A3%AB%E5%B0%8F%E5%B1%8B-0ea5e9?style=flat-square&amp;logo=ghost&amp;logoColor=white" alt="Blog: 木白的芝士小屋"/></a>
   <a href="mailto:xiebaiyuan@foxmail.com"><img src="https://img.shields.io/badge/Email-xiebaiyuan%40foxmail.com-ea4335?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Email"/></a>
   <a href="https://www.npmjs.com/package/dsh-lead-mode"><img src="https://img.shields.io/npm/v/dsh-lead-mode?style=flat-square&amp;logo=npm&amp;label=dsh-lead-mode&amp;color=38bdf8" alt="npm latest version of dsh-lead-mode"/></a>
+  <a href="https://www.npmjs.com/package/dsh-catdogtrace"><img src="https://img.shields.io/npm/v/dsh-catdogtrace?style=flat-square&amp;logo=npm&amp;label=dsh-catdogtrace&amp;color=38bdf8" alt="npm latest version of dsh-catdogtrace"/></a>
   <a href="https://skills.sh/xiebaiyuan/xiebaiyuan-skills"><img src="https://img.shields.io/badge/skills-12-22d3ee?style=flat-square" alt="12 skills in the xiebaiyuan-skills repo"/></a>
   <a href="https://github.com/xiebaiyuan?tab=followers"><img src="https://img.shields.io/github/followers/xiebaiyuan?style=flat-square&amp;logo=github&amp;label=Followers" alt="GitHub followers"/></a>
 </p>
@@ -40,6 +41,7 @@ measure before you cut, and keep the number reproducible
 | Building | What it is |
 |---|---|
 | [dsh-lead-mode](https://github.com/xiebaiyuan/dsh-lead-mode) | Lead mode for DeepSeek Harness: an agent preset, a working-method skill, a dependency self-check and two preflight reminders that push you to enable Agent Teams. On npm as `dsh-lead-mode` |
+| [CatDogTrace](https://github.com/xiebaiyuan/CatDogTrace) | Fingerprinting 24 dog and cat breeds from the integers a model picks, shipped three ways: a live browser page, an offline single file and a DSH plugin. On npm as `dsh-catdogtrace` |
 | [xiebaiyuan-skills](https://github.com/xiebaiyuan/xiebaiyuan-skills) | My personal agent-skills repo — 12 skills, distilled with nuwa and optimized with darwin |
 | [android-crash-diagnose](https://github.com/xiebaiyuan/android-crash-diagnose) | A standalone Android crash-diagnosis skill: collect crash logs, dropbox, tombstone and ANR traces, then turn them into a diagnosis the agent can act on. Freshly split out of my app work |
 | AI inference runtime | Operator kernels, INT8/FP16 quantization and graph compilation for mobile SoCs |
@@ -84,7 +86,7 @@ flowchart LR
 | [applevision-java-wrapper](https://github.com/xiebaiyuan/applevision-java-wrapper) | Author | Java bridge for Apple's Vision framework |
 | [PaddleSelfTools](https://github.com/xiebaiyuan/PaddleSelfTools) | Author | Utility toolchain for Paddle-Lite development and profiling |
 | [opencl_cook](https://github.com/xiebaiyuan/opencl_cook) | Author | OpenCL kernel experiments and GPU compute recipes |
-| [DogCatTrace](https://github.com/xiebaiyuan/DogCatTrace) | Author | Model-attribution experiment: a fingerprint pipeline with a uniform-random control group |
+| [CatDogTrace](https://github.com/xiebaiyuan/CatDogTrace) | Author | Model-attribution experiment: fingerprint 24 dog and cat breeds from the integers a model picks, with a uniform-random control group |
 
 <p>
   <img src="https://skillicons.dev/icons?i=cpp,python,cmake,android,kotlin,ts,git,linux" alt="Languages and tools: C++, Python, CMake, Android, Kotlin, TypeScript, Git, Linux"/>
@@ -128,10 +130,12 @@ flowchart TB
 | Plugin | What it does |
 |---|---|
 | [dsh-lead-mode](https://github.com/xiebaiyuan/dsh-lead-mode) | Adds a Lead mode to DSH: an agent preset, a working-method skill (`/skill lead-mode`), a dependency self-check (`/lead-mode`) and two preflight reminders. It touches nothing in the DSH core |
+| [dsh-catdogtrace](https://github.com/xiebaiyuan/CatDogTrace/tree/main/dsh-plugin) | A right-sidebar tab that turns three pasted model outputs into a ranking over 24 dog and cat breeds. The fingerprint bank is a lazy-loaded chunk; nothing leaves the machine |
 
 ```bash
-# install (needs the official Agent Teams runtime enabled)
+# install (dsh-lead-mode needs the official Agent Teams runtime enabled)
 dsh plugin add dsh-lead-mode
+dsh plugin add dsh-catdogtrace
 ```
 
 ### Agent skills I distilled
@@ -180,16 +184,16 @@ These ten are the third-party plugins my desktop profile loads right now. They a
 
 | Plugin | Version | What it gives me |
 |---|---|---|
-| [dsh-context](https://github.com/bowenliang123/dsh-context) | 0.77.0 | Context insight and management, so I can see what is really in the window |
-| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 0.14.0 | Interactive UI components rendered inline in a reply (npm package `@changfenhuang/dsh-genui`) |
-| [OpenViking memory](https://github.com/volcengine/OpenViking) | 0.5.29 | Persistent agent memory, knowledge RAG and skill storage (`@openviking/dsh-memory-plugin`) |
+| [dsh-context](https://github.com/bowenliang123/dsh-context) | 0.78.2 | Context insight and management, so I can see what is really in the window |
+| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 0.15.0 | Interactive UI components rendered inline in a reply (npm package `@changfenhuang/dsh-genui`) |
+| [OpenViking memory](https://github.com/volcengine/OpenViking) | 0.5.31 | Persistent agent memory, knowledge RAG and skill storage (`@openviking/dsh-memory-plugin`) |
 | [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | git pin | Turns an answer into a one-page visual HTML explainer |
-| [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 0.26.2 | Imports external chat transcripts as continuable sessions |
+| [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 0.26.3 | Imports external chat transcripts as continuable sessions |
 | [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 0.3.8 | A transparent animated desktop pet |
-| [dshmarket](https://github.com/dsh-market/dsh-market) | 1.70.2 | Plugin market and updater for the desktop app |
+| [dshmarket](https://github.com/dsh-market/dsh-market) | 1.73.5 | Plugin market and updater for the desktop app |
 | [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 2.12.0 | Pocket utilities and shortcuts inside the host |
-| [dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) | 0.7.1 | Own font, size, line height and weight for the conversation, with saveable presets |
-| [subagent-claude-code](https://github.com/deepseek-ai/deepseek-harness) | 0.2.1-rc.3 | Runs a delegated task in a separate Claude Code agent (`@deepseek-ai/dsh-subagent-claude-code`) |
+| [dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) | 0.7.3 | Own font, size, line height and weight for the conversation, with saveable presets |
+| [subagent-claude-code](https://github.com/deepseek-ai/deepseek-harness) | 0.2.1-rc.5 | Runs a delegated task in a separate Claude Code agent (`@deepseek-ai/dsh-subagent-claude-code`) |
 
 <img src="assets/divider.svg" width="100%" alt="circuit divider"/>
 

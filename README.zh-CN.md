@@ -8,6 +8,7 @@
   <a href="https://xiebaiyuan.com"><img src="https://img.shields.io/badge/Blog-%E6%9C%A8%E7%99%BD%E7%9A%84%E8%8A%9D%E5%A3%AB%E5%B0%8F%E5%B1%8B-0ea5e9?style=flat-square&amp;logo=ghost&amp;logoColor=white" alt="Blog: 木白的芝士小屋"/></a>
   <a href="mailto:xiebaiyuan@foxmail.com"><img src="https://img.shields.io/badge/Email-xiebaiyuan%40foxmail.com-ea4335?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Email"/></a>
   <a href="https://www.npmjs.com/package/dsh-lead-mode"><img src="https://img.shields.io/npm/v/dsh-lead-mode?style=flat-square&amp;logo=npm&amp;label=dsh-lead-mode&amp;color=38bdf8" alt="npm latest version of dsh-lead-mode"/></a>
+  <a href="https://www.npmjs.com/package/dsh-catdogtrace"><img src="https://img.shields.io/npm/v/dsh-catdogtrace?style=flat-square&amp;logo=npm&amp;label=dsh-catdogtrace&amp;color=38bdf8" alt="dsh-catdogtrace 的 npm 最新版本"/></a>
   <a href="https://skills.sh/xiebaiyuan/xiebaiyuan-skills"><img src="https://img.shields.io/badge/skills-12-22d3ee?style=flat-square" alt="12 skills in the xiebaiyuan-skills repo"/></a>
   <a href="https://github.com/xiebaiyuan?tab=followers"><img src="https://img.shields.io/github/followers/xiebaiyuan?style=flat-square&amp;logo=github&amp;label=Followers" alt="GitHub followers"/></a>
 </p>
@@ -40,6 +41,7 @@ measure before you cut, and keep the number reproducible
 | 在做的事 | 是什么 |
 |---|---|
 | [dsh-lead-mode](https://github.com/xiebaiyuan/dsh-lead-mode) | DeepSeek Harness 的 Lead 模式：一个 agent 预设、一个工作方法 skill、一个依赖自检，加两条前置提醒，催你开 Agent Teams。已上 npm，包名 `dsh-lead-mode` |
+| [CatDogTrace](https://github.com/xiebaiyuan/CatDogTrace) | 用模型自己挑的整数，把一段序列归到 24 个犬猫品种之一。三种入口：在线网页、离线单文件、DSH 插件。已上 npm，包名 `dsh-catdogtrace` |
 | [xiebaiyuan-skills](https://github.com/xiebaiyuan/xiebaiyuan-skills) | 我自己的 agent skill 仓库，12 个 skill。用 nuwa 蒸馏，用 darwin 调优 |
 | [android-crash-diagnose](https://github.com/xiebaiyuan/android-crash-diagnose) | 独立的 Android 崩溃诊断 skill：收崩溃日志、dropbox、tombstone、ANR 堆栈，转成 agent 能直接动手的诊断。刚从 App 那边拆出来 |
 | AI 推理运行时 | 移动端 SoC 上的算子 kernel、INT8/FP16 量化和图编译 |
@@ -84,7 +86,7 @@ flowchart LR
 | [applevision-java-wrapper](https://github.com/xiebaiyuan/applevision-java-wrapper) | 作者 | Apple Vision 框架的 Java 桥接 |
 | [PaddleSelfTools](https://github.com/xiebaiyuan/PaddleSelfTools) | 作者 | Paddle-Lite 开发与性能分析的工具链 |
 | [opencl_cook](https://github.com/xiebaiyuan/opencl_cook) | 作者 | OpenCL kernel 实验与 GPU 计算示例 |
-| [DogCatTrace](https://github.com/xiebaiyuan/DogCatTrace) | 作者 | 模型归因实验：一条指纹流水线，外加一个均匀随机的对照组 |
+| [CatDogTrace](https://github.com/xiebaiyuan/CatDogTrace) | 作者 | 模型归因实验：把模型挑出来的整数指到 24 个犬猫品种之一，外加一个均匀随机的对照组 |
 
 <p>
   <img src="https://skillicons.dev/icons?i=cpp,python,cmake,android,kotlin,ts,git,linux" alt="Languages and tools: C++, Python, CMake, Android, Kotlin, TypeScript, Git, Linux"/>
@@ -128,10 +130,12 @@ flowchart TB
 | 插件 | 作用 |
 |---|---|
 | [dsh-lead-mode](https://github.com/xiebaiyuan/dsh-lead-mode) | 给 DSH 加一个 Lead 模式：一个 agent 预设、一个工作方法 skill（`/skill lead-mode`）、一个依赖自检（`/lead-mode`），加两条前置提醒。DSH 核心一行没动 |
+| [dsh-catdogtrace](https://github.com/xiebaiyuan/CatDogTrace/tree/main/dsh-plugin) | 右侧栏一个 tab：贴三段模型输出，出 24 个犬猫品种的排名。指纹库是懒加载 chunk，数据不出本机 |
 
 ```bash
-# 安装（需要先开官方 Agent Teams 运行时）
+# 安装（dsh-lead-mode 需要先开官方 Agent Teams 运行时）
 dsh plugin add dsh-lead-mode
+dsh plugin add dsh-catdogtrace
 ```
 
 ### 我蒸馏的 agent skill
@@ -180,16 +184,16 @@ npx skills add xiebaiyuan/xiebaiyuan-skills --all
 
 | 插件 | 版本 | 它给了我什么 |
 |---|---|---|
-| [dsh-context](https://github.com/bowenliang123/dsh-context) | 0.77.0 | 上下文观察与管理，能看清窗口里到底装了什么 |
-| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 0.14.0 | 在回复里直接渲染交互 UI 组件（npm 包 `@changfenhuang/dsh-genui`） |
-| [OpenViking memory](https://github.com/volcengine/OpenViking) | 0.5.29 | 持久化的 agent 记忆、知识 RAG 和 skill 存储（`@openviking/dsh-memory-plugin`） |
+| [dsh-context](https://github.com/bowenliang123/dsh-context) | 0.78.2 | 上下文观察与管理，能看清窗口里到底装了什么 |
+| [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 0.15.0 | 在回复里直接渲染交互 UI 组件（npm 包 `@changfenhuang/dsh-genui`） |
+| [OpenViking memory](https://github.com/volcengine/OpenViking) | 0.5.31 | 持久化的 agent 记忆、知识 RAG 和 skill 存储（`@openviking/dsh-memory-plugin`） |
 | [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | git pin | 把一个回答变成一页可视化 HTML 讲解 |
-| [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 0.26.2 | 把外部聊天记录导入成可继续的会话 |
+| [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 0.26.3 | 把外部聊天记录导入成可继续的会话 |
 | [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 0.3.8 | 一只透明的桌宠，会动 |
-| [dshmarket](https://github.com/dsh-market/dsh-market) | 1.70.2 | 桌面端的插件市场与更新器 |
+| [dshmarket](https://github.com/dsh-market/dsh-market) | 1.73.5 | 桌面端的插件市场与更新器 |
 | [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 2.12.0 | 宿主里的快捷工具 |
-| [dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) | 0.7.1 | 对话区自己定字体、字号、行高、字重，预设能存下来 |
-| [subagent-claude-code](https://github.com/deepseek-ai/deepseek-harness) | 0.2.1-rc.3 | 把任务丢给一个独立的 Claude Code agent 跑（`@deepseek-ai/dsh-subagent-claude-code`） |
+| [dsh-fonttune](https://github.com/LyaxZ/dsh-fonttune) | 0.7.3 | 对话区自己定字体、字号、行高、字重，预设能存下来 |
+| [subagent-claude-code](https://github.com/deepseek-ai/deepseek-harness) | 0.2.1-rc.5 | 把任务丢给一个独立的 Claude Code agent 跑（`@deepseek-ai/dsh-subagent-claude-code`） |
 
 <img src="assets/divider.svg" width="100%" alt="circuit divider"/>
 
